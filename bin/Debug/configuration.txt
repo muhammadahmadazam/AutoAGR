@@ -1,0 +1,12 @@
+F 60
+PC 1
+OP 0
+W 0
+P 0
+FPM 0
+E 0
+PDEM C:\Users\Ahmed\Desktop\a.dem
+PAGR C:\Users\Ahmed\Desktop\x.agr
+PTF C:\Users\Ahmed\Desktop\AutoAGR logo
+PHLAE 
+ST 1

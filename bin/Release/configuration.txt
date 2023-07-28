@@ -1,0 +1,12 @@
+F 39
+PC 1
+OP 0
+W 0
+P 0
+FPM 1
+E 1
+PDEM C:\Users\Ahmed\Desktop\a.dem
+PAGR C:\Users\Ahmed\Desktop\1.agr
+PTF C:\Users\Ahmed\Desktop
+PHLAE C:\Users\Ahmed\Desktop\cfg
+ST 44

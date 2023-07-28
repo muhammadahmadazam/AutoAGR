@@ -1,0 +1,9 @@
+G:\Visual Studio Projects\Visual Studio 2019\AutoAGR\bin\Debug\AutoAGR.exe.config
+G:\Visual Studio Projects\Visual Studio 2019\AutoAGR\bin\Debug\AutoAGR.exe
+G:\Visual Studio Projects\Visual Studio 2019\AutoAGR\bin\Debug\AutoAGR.pdb
+G:\Visual Studio Projects\Visual Studio 2019\AutoAGR\obj\Debug\AutoAGR.Form1.resources
+G:\Visual Studio Projects\Visual Studio 2019\AutoAGR\obj\Debug\AutoAGR.Properties.Resources.resources
+G:\Visual Studio Projects\Visual Studio 2019\AutoAGR\obj\Debug\AutoAGR.csproj.GenerateResource.cache
+G:\Visual Studio Projects\Visual Studio 2019\AutoAGR\obj\Debug\AutoAGR.csproj.CoreCompileInputs.cache
+G:\Visual Studio Projects\Visual Studio 2019\AutoAGR\obj\Debug\AutoAGR.exe
+G:\Visual Studio Projects\Visual Studio 2019\AutoAGR\obj\Debug\AutoAGR.pdb
