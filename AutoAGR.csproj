@@ -93,8 +93,14 @@
     <Content Include="Images\folder-icon.png" />
     <Content Include="Images\icons8-close-50.png" />
     <Content Include="Images\icons8-download-64.png" />
+    <Content Include="Images\icons8-edit-property-50.png" />
     <Content Include="Images\icons8-folder-50.png" />
+    <Content Include="Images\icons8-full-screen-50.png" />
+    <Content Include="Images\icons8-maximize-50 %281%29.png" />
+    <Content Include="Images\icons8-maximize-50.png" />
     <Content Include="Images\icons8-minimize-24.png" />
+    <Content Include="Images\icons8-play-50.png" />
+    <Content Include="Images\icons8-square-50.png" />
     <Content Include="Images\icons8-terminal-50.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

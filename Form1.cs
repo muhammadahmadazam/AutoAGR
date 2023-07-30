@@ -376,6 +376,40 @@ namespace AutoAGR
             }
         }
 
+        private void BtnWindowed_Click(object sender, EventArgs e)
+        {
+            if (hlaePath == "")
+            {
+                MessageBox.Show("Path for HLAE folder has not been specified.");
+                return;
+            }
+            try
+            {
+                if (Directory.Exists(hlaePath))
+                {
+                    if (File.Exists(hlaePath + "\\hlae.exe") && File.Exists(hlaePath + "\\AfxHookSource.dll"))
+                    {
+                        ProcessStartInfo si = new ProcessStartInfo();
+                        si.FileName = hlaePath + "\\hlae.exe";
+                        string programPath = tfPath + "\\..\\hl2.exe";
+                        si.Arguments = "-customLoader -noGui -autoStart -hookDllPath \"" + hlaePath + "\\AfxHookSource.dll\" -programPath \"" + programPath + "\" -cmdLine \"-novid -window -width 640 -height 480 -steam -insecure +sv_lan 1 -console -game  tf +exec AutoAGR\"";
+                        Process.Start(si);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Some files are missing!");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Invalid path to HLAE folder.");
+                }
+            }
+            catch (System.NotSupportedException)
+            {
+                MessageBox.Show("Invalid path to HLAE folder.");
+            }
+        }
 
         //  MAKING FORM DRAGGABLE
         public const int WM_NCLBUTTONDOWN = 0xA1;

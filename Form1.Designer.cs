@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnHLAE = new System.Windows.Forms.Button();
+            this.btnWindowed = new System.Windows.Forms.Button();
             this.btn_save = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
             this.txtHLAE = new System.Windows.Forms.TextBox();
@@ -83,6 +83,7 @@
             this.dialog_dem = new System.Windows.Forms.OpenFileDialog();
             this.dialog_agr = new System.Windows.Forms.SaveFileDialog();
             this.dialog_tf = new System.Windows.Forms.FolderBrowserDialog();
+            this.btnHLAE = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_hlae)).BeginInit();
@@ -108,6 +109,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(213)))), ((int)(((byte)(177)))));
             this.panel1.Controls.Add(this.btnHLAE);
+            this.panel1.Controls.Add(this.btnWindowed);
             this.panel1.Controls.Add(this.btn_save);
             this.panel1.Controls.Add(this.panel11);
             this.panel1.Controls.Add(this.panel10);
@@ -125,19 +127,19 @@
             this.panel1.Size = new System.Drawing.Size(700, 700);
             this.panel1.TabIndex = 1;
             // 
-            // btnHLAE
+            // btnWindowed
             // 
-            this.btnHLAE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(185)))), ((int)(((byte)(138)))));
-            this.btnHLAE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnHLAE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHLAE.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.btnHLAE.Image = ((System.Drawing.Image)(resources.GetObject("btnHLAE.Image")));
-            this.btnHLAE.Location = new System.Drawing.Point(612, 629);
-            this.btnHLAE.Name = "btnHLAE";
-            this.btnHLAE.Size = new System.Drawing.Size(60, 60);
-            this.btnHLAE.TabIndex = 115;
-            this.btnHLAE.UseVisualStyleBackColor = false;
-            this.btnHLAE.Click += new System.EventHandler(this.BtnHLAE_Click);
+            this.btnWindowed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(185)))), ((int)(((byte)(138)))));
+            this.btnWindowed.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnWindowed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnWindowed.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.btnWindowed.Image = ((System.Drawing.Image)(resources.GetObject("btnWindowed.Image")));
+            this.btnWindowed.Location = new System.Drawing.Point(613, 559);
+            this.btnWindowed.Name = "btnWindowed";
+            this.btnWindowed.Size = new System.Drawing.Size(60, 60);
+            this.btnWindowed.TabIndex = 115;
+            this.btnWindowed.UseVisualStyleBackColor = false;
+            this.btnWindowed.Click += new System.EventHandler(this.BtnWindowed_Click);
             // 
             // btn_save
             // 
@@ -146,7 +148,7 @@
             this.btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.btn_save.Image = ((System.Drawing.Image)(resources.GetObject("btn_save.Image")));
-            this.btn_save.Location = new System.Drawing.Point(612, 564);
+            this.btn_save.Location = new System.Drawing.Point(613, 494);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(60, 60);
             this.btn_save.TabIndex = 114;
@@ -171,7 +173,7 @@
             this.panel11.Controls.Add(this.label8);
             this.panel11.Location = new System.Drawing.Point(29, 494);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(562, 195);
+            this.panel11.Size = new System.Drawing.Size(569, 195);
             this.panel11.TabIndex = 113;
             // 
             // txtHLAE
@@ -179,7 +181,7 @@
             this.txtHLAE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(227)))), ((int)(((byte)(203)))));
             this.txtHLAE.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtHLAE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(45)))), ((int)(((byte)(38)))));
-            this.txtHLAE.Location = new System.Drawing.Point(236, 131);
+            this.txtHLAE.Location = new System.Drawing.Point(244, 131);
             this.txtHLAE.Name = "txtHLAE";
             this.txtHLAE.Size = new System.Drawing.Size(268, 13);
             this.txtHLAE.TabIndex = 107;
@@ -188,7 +190,7 @@
             // pbox_hlae
             // 
             this.pbox_hlae.Image = ((System.Drawing.Image)(resources.GetObject("pbox_hlae.Image")));
-            this.pbox_hlae.Location = new System.Drawing.Point(528, 126);
+            this.pbox_hlae.Location = new System.Drawing.Point(534, 126);
             this.pbox_hlae.Name = "pbox_hlae";
             this.pbox_hlae.Size = new System.Drawing.Size(25, 25);
             this.pbox_hlae.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -212,7 +214,7 @@
             this.txtCfg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(227)))), ((int)(((byte)(203)))));
             this.txtCfg.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCfg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(45)))), ((int)(((byte)(38)))));
-            this.txtCfg.Location = new System.Drawing.Point(236, 91);
+            this.txtCfg.Location = new System.Drawing.Point(244, 91);
             this.txtCfg.Name = "txtCfg";
             this.txtCfg.Size = new System.Drawing.Size(268, 13);
             this.txtCfg.TabIndex = 104;
@@ -223,7 +225,7 @@
             this.txtAgr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(227)))), ((int)(((byte)(203)))));
             this.txtAgr.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAgr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(45)))), ((int)(((byte)(38)))));
-            this.txtAgr.Location = new System.Drawing.Point(236, 51);
+            this.txtAgr.Location = new System.Drawing.Point(244, 51);
             this.txtAgr.Name = "txtAgr";
             this.txtAgr.Size = new System.Drawing.Size(268, 13);
             this.txtAgr.TabIndex = 103;
@@ -234,7 +236,7 @@
             this.txtDem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(227)))), ((int)(((byte)(203)))));
             this.txtDem.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(45)))), ((int)(((byte)(38)))));
-            this.txtDem.Location = new System.Drawing.Point(236, 11);
+            this.txtDem.Location = new System.Drawing.Point(244, 11);
             this.txtDem.Name = "txtDem";
             this.txtDem.Size = new System.Drawing.Size(269, 13);
             this.txtDem.TabIndex = 102;
@@ -243,7 +245,7 @@
             // pbox_tf
             // 
             this.pbox_tf.Image = ((System.Drawing.Image)(resources.GetObject("pbox_tf.Image")));
-            this.pbox_tf.Location = new System.Drawing.Point(528, 86);
+            this.pbox_tf.Location = new System.Drawing.Point(534, 86);
             this.pbox_tf.Name = "pbox_tf";
             this.pbox_tf.Size = new System.Drawing.Size(25, 25);
             this.pbox_tf.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -254,7 +256,7 @@
             // pbox_agr
             // 
             this.pbox_agr.Image = ((System.Drawing.Image)(resources.GetObject("pbox_agr.Image")));
-            this.pbox_agr.Location = new System.Drawing.Point(528, 46);
+            this.pbox_agr.Location = new System.Drawing.Point(534, 46);
             this.pbox_agr.Name = "pbox_agr";
             this.pbox_agr.Size = new System.Drawing.Size(25, 25);
             this.pbox_agr.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -265,7 +267,7 @@
             // Pbox_DEM
             // 
             this.Pbox_DEM.Image = ((System.Drawing.Image)(resources.GetObject("Pbox_DEM.Image")));
-            this.Pbox_DEM.Location = new System.Drawing.Point(528, 6);
+            this.Pbox_DEM.Location = new System.Drawing.Point(534, 6);
             this.Pbox_DEM.Name = "Pbox_DEM";
             this.Pbox_DEM.Size = new System.Drawing.Size(25, 25);
             this.Pbox_DEM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -329,9 +331,9 @@
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(45)))), ((int)(((byte)(38)))));
             this.label11.Location = new System.Drawing.Point(33, 46);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(177, 25);
+            this.label11.Size = new System.Drawing.Size(209, 25);
             this.label11.TabIndex = 64;
-            this.label11.Text = "Choose .AGR file";
+            this.label11.Text = "Choose .AGR output";
             // 
             // label8
             // 
@@ -348,13 +350,16 @@
             // 
             this.panel10.Controls.Add(this.lbl_framerate);
             this.panel10.Controls.Add(this.nud_framerate);
-            this.panel10.Location = new System.Drawing.Point(30, 95);
+            this.panel10.Location = new System.Drawing.Point(30, 89);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(643, 50);
             this.panel10.TabIndex = 111;
             // 
             // lbl_framerate
             // 
+            this.lbl_framerate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_framerate.AutoSize = true;
             this.lbl_framerate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_framerate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(45)))), ((int)(((byte)(38)))));
@@ -367,6 +372,9 @@
             // nud_framerate
             // 
             this.nud_framerate.AllowDrop = true;
+            this.nud_framerate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.nud_framerate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(213)))), ((int)(((byte)(177)))));
             this.nud_framerate.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nud_framerate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -398,7 +406,7 @@
             this.panel9.Controls.Add(this.rbtn_E_Y);
             this.panel9.Controls.Add(this.label10);
             this.panel9.Controls.Add(this.label9);
-            this.panel9.Location = new System.Drawing.Point(30, 431);
+            this.panel9.Location = new System.Drawing.Point(30, 425);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(643, 60);
             this.panel9.TabIndex = 107;
@@ -456,7 +464,7 @@
             this.panel8.Controls.Add(this.rbtn_RFPM_N);
             this.panel8.Controls.Add(this.rbtn_RFPM_Y);
             this.panel8.Controls.Add(this.label7);
-            this.panel8.Location = new System.Drawing.Point(30, 375);
+            this.panel8.Location = new System.Drawing.Point(30, 369);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(643, 50);
             this.panel8.TabIndex = 106;
@@ -502,7 +510,7 @@
             this.panel7.Controls.Add(this.rbtn_P_N);
             this.panel7.Controls.Add(this.rbtn_P_Y);
             this.panel7.Controls.Add(this.label6);
-            this.panel7.Location = new System.Drawing.Point(29, 319);
+            this.panel7.Location = new System.Drawing.Point(29, 313);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(643, 50);
             this.panel7.TabIndex = 105;
@@ -548,7 +556,7 @@
             this.panel6.Controls.Add(this.rbtn_W_N);
             this.panel6.Controls.Add(this.rbtn_W_Y);
             this.panel6.Controls.Add(this.lbl_w);
-            this.panel6.Location = new System.Drawing.Point(30, 263);
+            this.panel6.Location = new System.Drawing.Point(30, 257);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(643, 50);
             this.panel6.TabIndex = 104;
@@ -594,7 +602,7 @@
             this.panel5.Controls.Add(this.rbtn_OP_N);
             this.panel5.Controls.Add(this.rbtn_OP_Y);
             this.panel5.Controls.Add(this.lbl_op);
-            this.panel5.Location = new System.Drawing.Point(30, 207);
+            this.panel5.Location = new System.Drawing.Point(30, 201);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(643, 50);
             this.panel5.TabIndex = 103;
@@ -640,7 +648,7 @@
             this.panel4.Controls.Add(this.rbtn_PC_N);
             this.panel4.Controls.Add(this.rbtn_PC_Y);
             this.panel4.Controls.Add(this.lbl_rpc);
-            this.panel4.Location = new System.Drawing.Point(30, 151);
+            this.panel4.Location = new System.Drawing.Point(30, 145);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(643, 50);
             this.panel4.TabIndex = 102;
@@ -706,7 +714,6 @@
             // 
             this.panel2.Controls.Add(this.pbox_minimize);
             this.panel2.Controls.Add(this.pbox_close);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(700, 30);
@@ -716,7 +723,7 @@
             // pbox_minimize
             // 
             this.pbox_minimize.Image = ((System.Drawing.Image)(resources.GetObject("pbox_minimize.Image")));
-            this.pbox_minimize.Location = new System.Drawing.Point(652, 3);
+            this.pbox_minimize.Location = new System.Drawing.Point(653, 3);
             this.pbox_minimize.Name = "pbox_minimize";
             this.pbox_minimize.Size = new System.Drawing.Size(20, 20);
             this.pbox_minimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -738,6 +745,20 @@
             // dialog_dem
             // 
             this.dialog_dem.FileName = "openFileDialog1";
+            // 
+            // btnHLAE
+            // 
+            this.btnHLAE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(185)))), ((int)(((byte)(138)))));
+            this.btnHLAE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnHLAE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHLAE.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.btnHLAE.Image = ((System.Drawing.Image)(resources.GetObject("btnHLAE.Image")));
+            this.btnHLAE.Location = new System.Drawing.Point(613, 624);
+            this.btnHLAE.Name = "btnHLAE";
+            this.btnHLAE.Size = new System.Drawing.Size(60, 60);
+            this.btnHLAE.TabIndex = 116;
+            this.btnHLAE.UseVisualStyleBackColor = false;
+            this.btnHLAE.Click += new System.EventHandler(this.BtnHLAE_Click);
             // 
             // Form1
             // 
@@ -839,6 +860,7 @@
         private System.Windows.Forms.PictureBox pbox_hlae;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_save;
+        private System.Windows.Forms.Button btnWindowed;
         private System.Windows.Forms.Button btnHLAE;
     }
 }

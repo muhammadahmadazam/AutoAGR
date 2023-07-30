@@ -59,15 +59,5 @@ namespace AutoAGR.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] HanaleiFill_Regular {
-            get {
-                object obj = ResourceManager.GetObject("HanaleiFill_Regular", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
     }
 }
